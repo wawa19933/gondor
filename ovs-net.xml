@@ -1,0 +1,26 @@
+<network>
+  <name>vme-network</name>
+  <forward mode='bridge'/>
+  <bridge name='vme'/>
+  <virtualport type='openvswitch'/>
+  <portgroup name='vlan-10'>
+    <vlan>
+      <tag id='10'/>
+    </vlan>
+  </portgroup>
+  <portgroup name='vlan-20'>
+    <vlan>
+      <tag id='20'/>
+    </vlan>
+  </portgroup>
+  <portgroup name='vlan-30'>
+    <vlan>
+      <tag id='30'/>
+    </vlan>
+  </portgroup>
+  <portgroup name='vlan-40'>
+    <vlan>
+      <tag id='40'/>
+    </vlan>
+  </portgroup>
+</network>
